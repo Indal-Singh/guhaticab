@@ -1,0 +1,6 @@
+ind9546
+ycttL9SZth6ZVtXM
+
+mongodb+srv://ind9546:ycttL9SZth6ZVtXM@guhaticab.jedgk0v.mongodb.net/?retryWrites=true&w=majority&appName=guhaticab
+
+mongodb+srv://ind9546:<password>@guhaticab.jedgk0v.mongodb.net/
