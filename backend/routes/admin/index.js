@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {requireAdminAuth, redirectToDashboard} = require('../../middleware/admin/auth');
-
+const {listAllUsers} = require('../../controllers/admin/users.controllers');
 /* GET home page. */
 router.get('/',redirectToDashboard, function(req, res, next) {
   res.render('admin/index',{pageTitle:"Admin Login"});
@@ -23,9 +23,7 @@ router.post('/login', (req, res) => {
 router.get('/dashboard', requireAdminAuth, (req, res) => {
   res.render('admin/dashboard', {pageTitle:"Dashboard - CAB",navActive:"dashboard"});
 });
-router.get('/users', requireAdminAuth, (req, res) => {
-  res.render('admin/users/users', {pageTitle:"Users - CAB",navActive:"users"});
-});
+router.get('/users', requireAdminAuth, listAllUsers);
 
 router.get('/categories', requireAdminAuth, (req, res) => {
   res.render('admin/categories/categories', {pageTitle:"Categories - CAB",navActive:"categories"});
