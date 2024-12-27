@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
           <div>
             <h5 className="font-semibold text-2xl pb-8">Newsletter</h5>
-            <p className="text-gray py-4 text-lg pb-4 text-justify">Call for booking: 8099439859|e-mail Us:<br/>gyanudoinlp@gmail.com|
+            <p className="text-gray py-4 text-lg pb-4 text-justify">Call for booking: 8405010784|e-mail Us:<br/>ind9546@gmail.com|
                and get exciting offers
 
             </p>
